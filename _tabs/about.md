@@ -15,4 +15,4 @@ He has strong experience in optimising and performance tunning in the Database a
 
 ## Connect with me
 
-- **Email : [jayaananth@gmail.com] (mailto:jayaananth@gmail.com)**
+- **Email : [ jayaananth@gmail.com ](mailto:jayaananth@gmail.com)**
