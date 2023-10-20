@@ -4,7 +4,7 @@ title:  "Building Serverless PySpark Jobs with EMR-Serverless and MWAA"
 date:   2023-10-10T14:25:52-05:00
 author: JayaAnanth
 categories: [EMR]
-cover:  "/assets/spark/emrserverless.png"
+
 ---
 
 
@@ -211,8 +211,7 @@ from airflow.providers.amazon.aws.operators.emr import (
 
 **Step 3:** Open the MWAA user interface (UI) and find the below DAG.
 
-![img-description](https://jayaananthdevops.github.io/assets/spark/mwaa.png)
-_Image Caption_
+
 
 
 
