@@ -226,7 +226,7 @@ Start job will run the spark job on the EMR applications.
 
 
 
-<img src="/assets/spark/EMR-1.png" alt="EMR Pyspark">
+
 
 Delete_app will delete the EMR application which was created as a part of the first step once the spark job has completed.
 
