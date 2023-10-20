@@ -211,8 +211,9 @@ from airflow.providers.amazon.aws.operators.emr import (
 
 **Step 3:** Open the MWAA user interface (UI) and find the below DAG.
 
+![Alt text](https://jayaananthdevops.github.io/assets/spark/mwaa.png "Image Title")
 
-  <img src="/assets/spark/mwaa.png" alt="MWAA Airflow">
+
 
 
 
@@ -229,12 +230,12 @@ Start job will run the spark job on the EMR applications.
 Delete_app will delete the EMR application which was created as a part of the first step once the spark job has completed.
 
 
-<img src="/assets/spark/EMR-2.png" alt="EMR Pyspark">
+
 
 
 Result
 
-<img src="/assets/spark/EMRTABLE.png" alt="EMR Result">
+
 
 
 **Benefits of combining EMR serverless PySpark jobs with MWAA:**
