@@ -4,6 +4,9 @@ author: jay
 date: 2023-10-15 12:00:00 +/-0800
 categories: [EMR, SPARK]
 tags: [emr]     # TAG names should always be lowercase
+image:
+  path: cover:  /assets/spark/emrserverless.png
+  alt: emrserverless
 ---
 
 **Introduction**
