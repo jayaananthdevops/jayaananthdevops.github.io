@@ -1,5 +1,5 @@
 ---
-title: Continuous Data Ingestion with Snowpipe and Stream in Snowflake
+title: "Continuous Data Ingestion with Snowpipe and Stream in Snowflake"
 date: 2023-10-15 12:00:00 +/-0800
 categories: [Snowflake]
 tags: [snowpipe,stream]]     # TAG names should always be lowercase
