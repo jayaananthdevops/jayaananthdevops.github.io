@@ -213,3 +213,53 @@ from airflow.providers.amazon.aws.operators.emr import (
  
  ![img-description](/assets/spark/mwaa.png)
 _MWAA Airflow_
+
+
+**Step 4 :** In the demo we are manually triggering the job.
+
+The create_spark_app will create the EMR Application.
+
+Start job will run the spark job on the EMR applications.
+
+
+![img-description](/assets/spark/EMR-1.png)
+_EMR Pyspark_
+
+
+Delete_app will delete the EMR application which was created as a part of the first step once the spark job has completed.
+
+![img-description](/assets/spark/EMR-2.png)
+_EMR Pyspark_
+
+
+
+Result
+
+![img-description](/assets/spark/EMRTABLE.png)
+_EMR Result_
+
+
+
+**Benefits of combining EMR serverless PySpark jobs with MWAA:**
+
+**Cost efficiency:** By leveraging serverless PySpark jobs on EMR and dynamic scaling of MWAA, you can achieve cost savings by only using resources when needed. This pay-as-you-go model eliminates the need for over-provisioning clusters, reducing operational costs.
+
+
+**Simplicity:** The combination of EMR serverless and MWAA eliminates much of the complexity associated with cluster provisioning and management. This simplicity allows data engineers and analysts to focus more on data processing logic and less on infrastructure concerns.
+
+
+**Scalability:** Both EMR and MWAA are designed to scale seamlessly based on workload demands. As your data processing requirements grow, you can trust that the underlying infrastructure will adapt accordingly.
+
+
+**Workflow Orchestration:** MWAA's integration with Apache Airflow provides a robust framework for building, scheduling and monitoring complex data workflows. This orchestration capability ensures that your EMR serverless PySpark jobs are executed in a structured and controlled manner.
+
+
+**Conclusion**
+
+In this post we have discussed how to integrate PySpark and EMR serverless schedules in MWAA.The combination of Amazon EMR serverless PySpark jobs and Amazon MWAA for workflow orchestration offers a powerful solution for processing and analysing big data in a flexible, scalable and cost-effective manner. This duo empowers organisations to focus on extracting valuable insights from their data without the hassle of infrastructure management.
+
+
+
+
+
+
