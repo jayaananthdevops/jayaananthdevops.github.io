@@ -4,7 +4,6 @@ title:  "Building Serverless PySpark Jobs with EMR-Serverless and MWAA"
 date:   2023-10-10T14:25:52-05:00
 author: JayaAnanth
 categories: [EMR]
-tags: [Spark,EMR, Airflow]
 cover:  "/assets/spark/emrserverless.png"
 ---
 
@@ -213,7 +212,7 @@ from airflow.providers.amazon.aws.operators.emr import (
 **Step 3:** Open the MWAA user interface (UI) and find the below DAG.
 
 
-  <img src="/assets/spark/mwaa.png" title="MWAA Airflow">
+  <img src="/assets/spark/mwaa.png" alt="MWAA Airflow">
 
 
 
@@ -225,17 +224,17 @@ Start job will run the spark job on the EMR applications.
 
 
 
-<img src="/assets/spark/EMR-1.png" title="EMR Pyspark">
+<img src="/assets/spark/EMR-1.png" alt="EMR Pyspark">
 
 Delete_app will delete the EMR application which was created as a part of the first step once the spark job has completed.
 
 
-<img src="/assets/spark/EMR-2.png" title="EMR Pyspark">
+<img src="/assets/spark/EMR-2.png" alt="EMR Pyspark">
 
 
 Result
 
-<img src="/assets/spark/EMRTABLE.png" title="EMR Result">
+<img src="/assets/spark/EMRTABLE.png" alt="EMR Result">
 
 
 **Benefits of combining EMR serverless PySpark jobs with MWAA:**
