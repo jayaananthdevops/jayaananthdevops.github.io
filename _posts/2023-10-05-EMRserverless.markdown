@@ -1,11 +1,13 @@
 ---
 title: Building Serverless PySpark Jobs with EMR-Serverless and MWAA
+author: jay
 date: 2023-10-15 12:00:00 +/-0800
 categories: [EMR, SPARK]
 tags: [emr]     # TAG names should always be lowercase
 ---
 
 **Introduction**
+
 Amazon Web Services (AWS) provides a rich ecosystem of tools and services to tackle big data challenges. Two powerful components that stand out are Amazon EMR (Elastic MapReduce) and Amazon MWAA (Managed Workflows for Apache Airflow).
 
 In this blog, we will explore how the combination of EMR Serverless PySpark jobs on MWAA revolutionises big data processing and analysis.
@@ -206,4 +208,8 @@ from airflow.providers.amazon.aws.operators.emr import (
 {% endraw %}
 {% endhighlight %}
 
-## Step 3: Open the MWAA user interface (UI) and find the below DAG.
+**Step 3:** Open the MWAA user interface (UI) and find the below DAG.
+
+ 
+ ![img-description](/assets/spark/mwaa.png)
+_MWAA Airflow_
