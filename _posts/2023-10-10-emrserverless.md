@@ -211,7 +211,8 @@ from airflow.providers.amazon.aws.operators.emr import (
 
 **Step 3:** Open the MWAA user interface (UI) and find the below DAG.
 
-![Alt text](https://jayaananthdevops.github.io/assets/spark/mwaa.png "Image Title")
+![MWAA](/assets/spark/mwaa.png)
+_Image Caption_
 
 
 
