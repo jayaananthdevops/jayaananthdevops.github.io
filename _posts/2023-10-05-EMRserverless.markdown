@@ -261,7 +261,7 @@ _EMR Result_
 
 In this post we have discussed how to integrate PySpark and EMR serverless schedules in MWAA.The combination of Amazon EMR serverless PySpark jobs and Amazon MWAA for workflow orchestration offers a powerful solution for processing and analysing big data in a flexible, scalable and cost-effective manner. This duo empowers organisations to focus on extracting valuable insights from their data without the hassle of infrastructure management.
 
-
+Note: This article was originally published on [ Cevo Australia’s website ](https://cevo.com.au/post/building-serverless-pyspark-jobs-with-emr-serverless-and-mwaa/)
 
 
 

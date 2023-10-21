@@ -26,7 +26,7 @@ description: >- # used by seo meta and the atom feed
 url: "https://jayaananthdevops.github.io"
 
 github:
-  username: jayaananthdevops # change to your github username
+  username: jaydataconsultant # change to your github username
 
 twitter:
   username: twitter_username # change to your twitter username
@@ -63,7 +63,7 @@ google_analytics:
 #     light  - Use the light color scheme
 #     dark   - Use the dark color scheme
 #
-theme_mode: [ light ]# [light|dark]
+theme_mode: #[light|dark]
 
 # The CDN endpoint for images.
 # Notice that once it is assigned, the CDN url
