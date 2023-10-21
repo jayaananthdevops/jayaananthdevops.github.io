@@ -163,3 +163,5 @@ To summarise, materialised views are fantastic for improving the efficiency of r
 
 In this post, we have discussed how to create the dynamic table and implement SCD Type 2 using it. With dynamic tables, managing SCDs becomes simpler and more efficient compared to [traditional methods](https://community.snowflake.com/s/article/Building-a-Type-2-Slowly-Changing-Dimension-in-Snowflake-Using-Streams-and-Tasks-Part-1).
 
+
+Note: This article was originally published on [ Cevo Australia’s website ](https://cevo.com.au/post/dynamic-table-usage-in-snowflake-implementing-type-2-slowly-changing-dimensions-scd-with-flexibility-and-efficiency/)
