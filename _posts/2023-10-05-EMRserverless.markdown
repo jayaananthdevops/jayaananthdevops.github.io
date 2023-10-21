@@ -2,7 +2,7 @@
 title: Building Serverless PySpark Jobs with EMR-Serverless and MWAA
 author: jay
 date: 2023-10-15 12:00:00 +/-0800
-categories: [EMR, Spark]
+categories: [EMR]
 tags: [emr,spark,airflow]     # TAG names should always be lowercase
 image:
   path: /assets/spark/emrserverless.png
