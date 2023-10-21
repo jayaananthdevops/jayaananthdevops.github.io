@@ -2,8 +2,8 @@
 title: Building Serverless PySpark Jobs with EMR-Serverless and MWAA
 author: jay
 date: 2023-10-15 12:00:00 +/-0800
-categories: [EMR, SPARK]
-tags: [emr]     # TAG names should always be lowercase
+categories: [EMR, Spark]
+tags: [emr,spark,airflow]     # TAG names should always be lowercase
 image:
   path: /assets/spark/emrserverless.png
   alt: emrserverless
