@@ -5,7 +5,7 @@ date: 2023-09-27 12:00:00 +/-0800
 categories: [Snowflake]
 tags: [snowflake,dynamictable,scd2]     # TAG names should always be lowercase
 image:
-  path: SF_dynamics_tables.jpg
+  path: SF_dynamics_tables.png
   alt: Snowflake Dynamic Table
 toc: true
 img_path: /assets/dynamictable/
