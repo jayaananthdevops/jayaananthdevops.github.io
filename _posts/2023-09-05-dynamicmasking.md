@@ -9,6 +9,7 @@ image:
   alt: Snowflake Dynamic Data Masking
 toc: true
 img_path: /assets/dynamimasking/
+comments: true
 ---
 
 ## Introduction:

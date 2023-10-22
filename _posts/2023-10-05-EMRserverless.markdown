@@ -7,6 +7,7 @@ tags: [emr,spark,airflow]     # TAG names should always be lowercase
 image:
   path: /assets/spark/emrserverless-spark.png
   alt: emrserverless_pyspark
+comments: true
 ---
 
 **Introduction**
