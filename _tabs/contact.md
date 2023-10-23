@@ -15,7 +15,7 @@ order: 6
 </style>
 <div id="mc_embed_signup">
     <form action="https://datainevitable.us9.list-manage.com/subscribe/post?u=1d9ad4c0fcc2fda62ecb888e4&amp;id=0c400e90a2&amp;f_id=00481ee1f0" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank">
-        <div id="mc_embed_signup_scroll"><h2>This blog page is designed to keep you informed anything and everything about data and to support your career growth.</h2>
+        <div id="mc_embed_signup_scroll"><h2>This blog page is designed to keep you informed anything and everything about data and to support your career growth</h2>
             <div class="indicates-required"><span class="asterisk">*</span> indicates required</div>
             <div class="mc-field-group"><label for="mce-EMAIL">Email Address <span class="asterisk">*</span></label><input type="email" name="EMAIL" class="required email" id="mce-EMAIL" required="" value=""></div>
         <div id="mce-responses" class="clear foot">
