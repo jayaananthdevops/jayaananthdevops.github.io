@@ -168,7 +168,7 @@ In this post, we have discussed how to create the dynamic table and implement SC
 Note: This article was originally published on [ Cevo Australia’s website ](https://cevo.com.au/post/dynamic-table-usage-in-snowflake-implementing-type-2-slowly-changing-dimensions-scd-with-flexibility-and-efficiency/)
 
 
-## If you enjoy the article, consider supporting me by buying a coffee.
+## If you enjoy the article, consider supporting me by buying a coffee for $1.
 
-<a href="https://www.buymeacoffee.com/jayaananth" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png" alt="Buy Me A Coffee" style="height: 60px !important;width: 217px !important;" ></a>
 
+<script type="text/javascript" src="https://cdnjs.buymeacoffee.com/1.0.0/button.prod.min.js" data-name="bmc-button" data-slug="jayaananth" data-color="#FFDD00" data-emoji="☕"  data-font="Cookie" data-text="Buy me a coffee @ 1$" data-outline-color="#000000" data-font-color="#000000" data-coffee-color="#ffffff" ></script>
