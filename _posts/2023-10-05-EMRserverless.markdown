@@ -10,27 +10,27 @@ image:
 comments: true
 ---
 
-**Introduction**
+## Introduction
 
 Amazon Web Services (AWS) provides a rich ecosystem of tools and services to tackle big data challenges. Two powerful components that stand out are Amazon EMR (Elastic MapReduce) and Amazon MWAA (Managed Workflows for Apache Airflow).
 
 In this blog, we will explore how the combination of EMR Serverless PySpark jobs on MWAA revolutionises big data processing and analysis.
 
-**EMR Serverless Overview:**
+## EMR Serverless Overview:
 
 With [ EMRServerless ](https://docs.aws.amazon.com/emr/latest/EMR-Serverless-UserGuide/emr-serverless.html), you pay only for the resources you consume while your jobs are running, and you have the option to pause your cluster when it is not in use to save on costs. EMR serverless also provides built-in integrations with other AWS services, such as Amazon S3 and Amazon DynamoDB, which can make it easier to store and access data for your big data workloads.
 
 
-**MWAA Overview :**
+## MWAA Overview :
 
 MWAA stands for Managed Workflows for Apache Airflow [ MWAA ](https://docs.aws.amazon.com/mwaa/latest/userguide/what-is-mwaa.html), which is a fully managed service provided by AWS. Apache Airflow is an open-source platform used for orchestrating, scheduling, and monitoring complex data workflows. It allows you to define, schedule, and manage data pipelines as directed acyclic graphs.
 MWAA simplifies the deployment and management of Apache Airflow environments. It handles the underlying infrastructure, including provisioning servers, scaling, patching and maintenance, so that you can focus on designing and running your data workflows. 
 
-**Implementation:**
+## Implementation:
 
 By integrating EMR serverless PySpark jobs with MWAA, you can create sophisticated data processing pipelines that are orchestrated and managed seamlessly. MWAA's support for dynamic scaling ensures that resources are allocated efficiently based on job requirements, further optimising cost and performance.
 
-**PySpark Code**
+## PySpark Code
 
 The below PySpark code to read from the post gres employee table and insert into the other employee_v1table.
 
@@ -76,7 +76,7 @@ df.write.jdbc(url=postgres_url,
 {% endhighlight %}
 
 
-**VPC Configuration using Terraform**
+## VPC Configuration using Terraform
 
 {% highlight yaml %}
 {% raw %}
@@ -136,14 +136,14 @@ module "vpc" {
 {% endraw %}
 {% endhighlight %}
 
-**MWAA DAG**
+## MWAA DAG
 
 A Directed Acyclic Graph (DAG) is a graph object that represents a workflow in Airflow. It is a collection of tasks in a way that shows each task's relationships and dependencies. DAGs contain the context of task execution. In MWAA, we will keep DAGs in S3.
 
 
-**Step 1:** Create the MWAA with required IAM policy and VPC dependencies.
+## Step 1: Create the MWAA with required IAM policy and VPC dependencies.
 
-**Step 2:** Add the below DAG in the specified S3 bucket.
+## Step 2: Add the below DAG in the specified S3 bucket.
 
 The below DAG creates an EMR serverless application and runs the PySpark job on it. Once the job has been completed successfully the dag will delete the EMR applications.
 
@@ -212,14 +212,14 @@ from airflow.providers.amazon.aws.operators.emr import (
 {% endraw %}
 {% endhighlight %}
 
-**Step 3:** Open the MWAA user interface (UI) and find the below DAG.
+## Step 3: Open the MWAA user interface (UI) and find the below DAG.
 
  
  ![img-description](/assets/spark/mwaa.png)
 _MWAA Airflow_
 
 
-**Step 4 :** In the demo we are manually triggering the job.
+## Step 4 :In the demo we are manually triggering the job.
 
 The create_spark_app will create the EMR Application.
 
@@ -237,14 +237,14 @@ _EMR Pyspark_
 
 
 
-Result
+## Result
 
 ![img-description](/assets/spark/EMRTABLE.png)
 _EMR Result_
 
 
 
-**Benefits of combining EMR serverless PySpark jobs with MWAA:**
+## Benefits of combining EMR serverless PySpark jobs with MWAA:
 
 **Cost efficiency:** By leveraging serverless PySpark jobs on EMR and dynamic scaling of MWAA, you can achieve cost savings by only using resources when needed. This pay-as-you-go model eliminates the need for over-provisioning clusters, reducing operational costs.
 
@@ -258,11 +258,11 @@ _EMR Result_
 **Workflow Orchestration:** MWAA's integration with Apache Airflow provides a robust framework for building, scheduling and monitoring complex data workflows. This orchestration capability ensures that your EMR serverless PySpark jobs are executed in a structured and controlled manner.
 
 
-**Conclusion**
+## Conclusion
 
 In this post we have discussed how to integrate PySpark and EMR serverless schedules in MWAA.The combination of Amazon EMR serverless PySpark jobs and Amazon MWAA for workflow orchestration offers a powerful solution for processing and analysing big data in a flexible, scalable and cost-effective manner. This duo empowers organisations to focus on extracting valuable insights from their data without the hassle of infrastructure management.
 
-Note: This article was originally published on [ Cevo Australia’s website ](https://cevo.com.au/post/building-serverless-pyspark-jobs-with-emr-serverless-and-mwaa/)
+**Note:** This article was originally published on [ Cevo Australia’s website ](https://cevo.com.au/post/building-serverless-pyspark-jobs-with-emr-serverless-and-mwaa/)
 
 ## If you enjoy the article, consider supporting me by buying a coffee.
 
