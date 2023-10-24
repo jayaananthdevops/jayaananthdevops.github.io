@@ -116,3 +116,7 @@ In this post, we have discussed how to create the data masking manually and usin
 
 Note: This article was originally published on [ Cevo Australia’s website ](https://cevo.com.au/post/snowflake-dynamic-data-masking-enhancing-data-security-and-compliance/)
 
+## If you enjoy the article, consider supporting me by buying a coffee.
+
+<a href="https://www.buymeacoffee.com/jayaananth" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png" alt="Buy Me A Coffee" style="height: 60px !important;width: 217px !important;" ></a>
+
