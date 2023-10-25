@@ -92,7 +92,7 @@ Set up ECS Cluster and Task definition:
 ![img-description](/assets/snowflake-dbt-ecs/AWS_ECS.png)
 _AWS ECS_
 
-![img-description](/assets/snowflake-dbt-ecs/AWS_ECS_running.png)
+![img-description](/assets/snowflake-dbt-ecs/AWS_ECS_Running.png)
 _AWS ECS running_
 
 ## STEP 3: Place your DAG Code in the S3 Bucket.
