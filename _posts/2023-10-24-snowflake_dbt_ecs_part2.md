@@ -277,7 +277,7 @@ In this blog, we have explored the construction of Snowflake Data Transformation
 **Note:** This article was originally published on [ Cevo Australia’s website ](https://cevo.com.au/post/orchestrating-snowflake-data-transformations-with-dbt-on-amazon-ecs-through-apache-airflow-part-2//)
 
 
-## If you enjoy the article, Please Subscribe.
+**If you enjoy the article, Please Subscribe.**
 ## If you love the article, Please consider supporting me by buying a coffee for $1.
 
 
