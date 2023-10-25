@@ -19,7 +19,7 @@ In our previous post, we explored the setup of DBT on an ECR private repository 
 _Architecture_
 
 Refer to my previous blog for instructions on configuring DBT on an ECR Private Repository.
-https://docs.google.com/document/d/1XXIOi5V63OjOXqJdyT_lPXarilhiBjs8nzHHx9dzc6o/edit
+[PART 1](https://datainevitable.com/posts/snowflake_dbt_ecs_part1/)
 
 ## MWAA:
 [Amazon Managed Workflows](https://docs.aws.amazon.com/mwaa/latest/userguide/what-is-mwaa.html) allow developers the ability to quickly deploy an Airflow instance on AWS that utilises a combination of other AWS services to optimise the overall set-up.
