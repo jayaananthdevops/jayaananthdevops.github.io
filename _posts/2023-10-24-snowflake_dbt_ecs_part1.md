@@ -9,6 +9,15 @@ image:
   alt: Snowflake Data Transformations with DBT on Amazon ECS through Apache Airflow-
 comments: true
 ---
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-56G57XP8PY"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-56G57XP8PY');
+</script>
 
 ## Overview:
 This blog offers a comprehensive walkthrough for setting up DBT to execute data transformation tasks specifically designed for Snowflake. We've streamlined the DBT configuration process by packaging it within a Docker Image, which is securely stored in a private ECR repository. To efficiently handle scheduling and orchestration, we've harnessed the power of both ECS Service and MWAA. You can access the source code in this [GitRepo](https://github.com/JayDataConsultant/snowflake-dbt-ecs).

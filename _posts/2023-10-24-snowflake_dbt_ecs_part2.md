@@ -10,6 +10,16 @@ image:
 comments: true
 ---
 
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-56G57XP8PY"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-56G57XP8PY');
+</script>
+
 ## Overview:
 In our previous post, we explored the setup of DBT on an ECR private repository through an AWS pipeline. In this blog, our emphasis will be on configuring MWAA and initiating DBT processes using Amazon's managed Apache Airflow (MWAA). Please find the source code on my [GitRepo](https://github.com/JayDataConsultant/snowflake-dbt-ecs).
 
@@ -267,7 +277,8 @@ In this blog, we have explored the construction of Snowflake Data Transformation
 **Note:** This article was originally published on [ Cevo Australia’s website ](https://cevo.com.au/post/orchestrating-snowflake-data-transformations-with-dbt-on-amazon-ecs-through-apache-airflow-part-2//)
 
 
-## If you enjoy the article, consider supporting me by buying a coffee for $1.
+## If you enjoy the article, Please Subscribe.
+## If you love the article, Please consider supporting me by buying a coffee for $1.
 
 
 <script type="text/javascript" src="https://cdnjs.buymeacoffee.com/1.0.0/button.prod.min.js" data-name="bmc-button" data-slug="jayaananth" data-color="#FFDD00" data-emoji="☕"  data-font="Cookie" data-text="Buy me a coffee @ 1$" data-outline-color="#000000" data-font-color="#000000" data-coffee-color="#ffffff" ></script>
