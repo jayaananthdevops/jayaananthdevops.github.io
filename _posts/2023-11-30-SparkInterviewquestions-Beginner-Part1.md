@@ -1,16 +1,16 @@
 ---
-title: SPARK Interview Questions PART-1
+title: SPARK Interview Questions Beginner PART-1
 author: jay
 date: 2023-11-30 12:00:00 +/-0800
 categories: [Interview Questions]
 tags: [spark,dataengineer,interviewquestions]     # TAG names should always be lowercase
 image:
   path: /assets/interviewquestion/sparkinterview.png
-  alt: Spark Interview Questions
+  alt: Spark Interview Questions Beginner
 comments: true
 ---
 
-## 1- What is Lazy Evaluation in Apache Spark
+## 1- What is Lazy Evaluation in Apache Spark?
 
 Before diving into the intricacies of lazy evaluation, it's crucial to grasp two fundamental concepts in Spark: Transformation and Action.
 
