@@ -177,8 +177,6 @@ _Unest_Table
 ![img-description](/assets/glue_xml_athena/parquest_nestesd_unnest.png)
 _Nested_Table
 
-
-
 ## Conclusion
 
 In this post, we have discussed how to read the XML file using Athena and unnest the table. This will help the user to verify the source data before processing.In the upcoming article we will discuss how to process the XML file through AWS Glue
