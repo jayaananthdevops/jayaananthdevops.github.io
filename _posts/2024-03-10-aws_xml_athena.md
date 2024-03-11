@@ -5,8 +5,8 @@ date: 2024-03-11 12:00:00 +/-0800
 categories: [AWS Athena]
 tags: [glue,athena,xml,glue catalog,glue crawler]     # TAG names should always be lowercase
 image:
-  path: /assets/snowpipe/snowflake_stream.png
-  alt: Snowpipe Stream Task
+  path: /assets/glue_xml_athena/XML_AWS_ATHENA.png
+  alt: XML File Processing with Athena 
 comments: true
 ---
 
@@ -28,19 +28,19 @@ In this blog, we will delve into the process of reading XML files in a tabular f
 
 ## Prerequisites
 Before you begin this tutorial, complete the following prerequisites:
-1. Download the sample files from [ kaggle site ] (https://www.kaggle.com/datasets/amritanshusharma23/demo-xml)
-2. Create S3 Bucket and place the sample files
-3. Create all the necessary IAM roles and policies.
-4. Create a AWS Database using Glue
+1. Download the sample files from [ kaggle site ](https://www.kaggle.com/datasets/amritanshusharma23/demo-xml)
+2. Establish an S3 Bucket and upload the sample files to it.
+3. Set up all the essential IAM roles and policies.
+4. Generate an AWS Database utilizing Glue.
 
-Steps to processs the XML file
+**Steps to processs the XML file** 
 
 (i) Before creating a crawler we need to create an xml classifier where we define the rowtag 
 
   ![img-description](/assets/glue_xml_athena/classifier_xml.png)
 _AWS Classifier_
 
-(ii) Create an AWS Glue crawler to extract XML metadata and run the crawler which will  create a table in the AWS Glue Data Catalog
+(ii) Generate an AWS Glue crawler to extract metadata from XML files, then execute the crawler to generate a table in the AWS Glue Data Catalog.
 
   ![img-description](/assets/glue_xml_athena/crawler_s3_classifier.png)
 _AWS Glue Catalog_
@@ -53,26 +53,33 @@ _AWS Glue Database_
 If we try to query the XML table the query will be failed since Athena wont support XML format
 
   ![img-description](/assets/glue_xml_athena/xml_query.png)
-_XML_Table_Athena
+_Query XML Table Athena_
 
-(iv) Create a Glue job to convert XML to Parquet formt.This can be achieved with two ways
-      Approach 1- Use Visual editor from Glue anc convert from XML to Parquet format
-      Approach 2 - Use script editor and write the script. In this example I have used pyspark
+(iv) Generate a Glue job to convert XML files to the Parquet format, which can be accomplished using two different methods.
+      Method 1- Use Visual editor from Glue anc convert from XML to Parquet format
+      Method 2 - Use script editor and write the script. In this example I have used pyspark
 
-**Approach 1:** 
+**Method 1:** 
 
-        **Step 1 :** Go to AWS Glue and select ETL Jobs -> Visual ETL
-        **Step 2 :** Choose AWS Glue Data Catalog as Source and select your respective table as below
+  **Step 1 :** Go to AWS Glue and select ETL Jobs -> Visual ETL
+
+  **Step 2 :** Choose AWS Glue Data Catalog as Source and select your respective table as below
                   ![img-description](/assets/glue_xml_athena/glue_source.png)
-        **Step 3 :** Under transformation choose Change Schema
-        **Step 4 :** Under target select S3 bucket ,parquet format and snappy compression as below 
+                  _Glue Visual Editor Source_
+
+  **Step 3 :** Under transformation choose Change Schema.
+
+  **Step 4 :** Under target select S3 bucket ,parquet format and snappy compression as below 
         ![img-description](/assets/glue_xml_athena/glue_target.png)
-        **Step 5 :** Choose the respective IAM Role and Run the Glue Job
+        _Glue Visual Editor Target_
 
-**Approach 2:** 
+  **Step 5 :** Choose the respective IAM Role and Run the Glue Job
 
-        **Step 1 :** Go to AWS Glue and select ETL Jobs -> Visual ETL -> Script editor  
-        **Step 2 :** Copy paste the below code and run the job
+**Method 2:** 
+
+   **Step 1 :** Go to AWS Glue and select ETL Jobs -> Visual ETL -> Script editor  
+   
+  **Step 2 :** Copy paste the below code and run the job
 
 {% highlight python %}
 {% raw %}
@@ -111,21 +118,22 @@ job.commit()
 {% endraw %}
 {% endhighlight %}
 
+
 (v) Create an AWS Glue crawler to extract Parquet metadata and run the crawler which will create a table in the AWS Glue Data Catalog (Choose the same classifier that we created in the first steps)
 
 ![img-description](/assets/glue_xml_athena/parquet_crawler_src.png)
-_Crawler_Parquet_Source
+_AWS Crawler Parquet Source_
 
-![img-description](/assets/glue_xml_athena/xml_query.png)
-_Crawler_Parquet_Output
+![img-description](/assets/glue_xml_athena/parquet_crawler_output.png)
+_AWS Crawler Parquet Output_
+
 
 (vi) Query the table in Athena and the result will be in the JSON format
 
 ![img-description](/assets/glue_xml_athena/parquet_athena.png)
-_Athena_Parquet_Table
+_Query Parquet Table Using Athena_
 
-(vii) In order to view the JSON into table format we have to unnest the column. Its mandatory to understand the schema of the table before we start unnest . In this scenario
-
+(vii) To display the JSON data in a tabular format, we must unnest the column. It is essential to grasp the table's schema before proceeding with the unnesting process.
 
 {% highlight python %}
 {% raw %}
@@ -150,8 +158,15 @@ spark.stop()
 {% endraw %}
 {% endhighlight %}
 
+Schema Structure of the Table
+
 ![img-description](/assets/glue_xml_athena/printSchema.png)
-_Print_Schema_Table
+_Schema Structure Of Parquet Table_
+
+
+![img-description](/assets/glue_xml_athena/parquet_unest.png)
+_Unnesting the Table using SQL_
+
 
 To query the table with nested structure
 
@@ -170,16 +185,13 @@ CROSS JOIN
 {% endraw %}
 {% endhighlight %}
 
-![img-description](/assets/glue_xml_athena/parquet_unest.png)
-_Unest_Table
-
 
 ![img-description](/assets/glue_xml_athena/parquest_nestesd_unnest.png)
-_Nested_Table
+_Unnesting the nested Table using SQL_
 
 ## Conclusion
 
-In this post, we have discussed how to read the XML file using Athena and unnest the table. This will help the user to verify the source data before processing.In the upcoming article we will discuss how to process the XML file through AWS Glue
+In this article, we have explored the process of reading an XML file using Athena and flattening the table structure for easier analysis. This approach enables users to validate the source data prior to further processing. In our next publication, we will delve into the detailed steps involved in processing XML files using AWS Glue, enhancing the understanding and utilization of these powerful AWS services.
 
 
 
