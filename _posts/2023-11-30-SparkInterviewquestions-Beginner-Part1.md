@@ -5,7 +5,7 @@ date: 2023-11-30 12:00:00 +/-0800
 categories: [Interview Questions]
 tags: [spark,dataengineer,interviewquestions]     # TAG names should always be lowercase
 image:
-  path: /assets/interviewquestion/sparkinterview.png
+  path: https://assets/interviewquestion/sparkinterview.png
   alt: Spark Interview Questions Beginner
 comments: true
 ---

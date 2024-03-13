@@ -5,7 +5,7 @@ date: 2024-03-11 12:00:00 +/-0800
 categories: [AWS Athena]
 tags: [glue,athena,xml,glue catalog,glue crawler]     # TAG names should always be lowercase
 image:
-  path: /assets/glue_xml_athena/XML_AWS_ATHENA.png
+  path: //assets/glue_xml_athena/XML_AWS_ATHENA.png
   alt: XML File Processing with Athena 
 comments: true
 ---
