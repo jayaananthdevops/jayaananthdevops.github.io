@@ -28,7 +28,7 @@ In this blog, we will delve into the process of reading XML files in a tabular f
 
 ## Prerequisites
 Before you begin this tutorial, complete the following prerequisites:
-1. Download the sample files from [ kaggle site ](https://www.kaggle.com/datasets/amritanshusharma23/demo-xml)
+1. Download the sample files from kaggle site 
 2. Establish an S3 Bucket and upload the sample files to it.
 3. Set up all the essential IAM roles and policies.
 4. Generate an AWS Database utilizing Glue.
