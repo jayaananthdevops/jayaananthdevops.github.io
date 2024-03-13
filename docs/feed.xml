@@ -1,0 +1,234 @@
+
+
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <id>http://localhost:4000/</id>
+  <title>JayaAnanth</title>
+  <subtitle>Jayaananth is a Data Consultant with over 12 years of experience in the data modeling design, integration, extraction, loading, maintaining, decision support and reporting systems. He has extensive knowledge in Data warehousing concept and ETL/ELT development(ie Redshift,Snowflake).He has strong experience in optimising and performance tunning in the Database and has successfully delivered multiple projects. He is highly interested in Data lake, modern data architecture..</subtitle>
+  <updated>2024-03-13T19:33:41+11:00</updated>
+  <author>
+    <name>JayaAnanth</name>
+    <uri>http://localhost:4000/</uri>
+  </author>
+  <link rel="self" type="application/atom+xml" href="http://localhost:4000/feed.xml"/>
+  <link rel="alternate" type="text/html" hreflang="en"
+    href="http://localhost:4000/"/>
+  <generator uri="https://jekyllrb.com/" version="4.3.3">Jekyll</generator>
+  <rights> © 2024 JayaAnanth </rights>
+  <icon>/assets/img/favicons/favicon.ico</icon>
+  <logo>/assets/img/favicons/favicon-96x96.png</logo>
+
+
+  
+  <entry>
+    <title>Efficient XML Data Processing and Querying with AWS Glue and Athena - A Comprehensive Guide</title>
+    <link href="http://localhost:4000/posts/aws_xml_athena/" rel="alternate" type="text/html" title="Efficient XML Data Processing and Querying with AWS Glue and Athena - A Comprehensive Guide" />
+    <published>2024-03-11T12:00:00+11:00</published>
+  
+    <updated>2024-03-13T19:31:58+11:00</updated>
+  
+    <id>http://localhost:4000/posts/aws_xml_athena/</id>
+    <content src="http://localhost:4000/posts/aws_xml_athena/" />
+    <author>
+      <name>jay</name>
+    </author>
+
+  
+    
+    <category term="AWS Athena" />
+    
+  
+
+  
+    <summary>
+      
+
+
+
+
+
+      
+
+
+
+
+Introduction
+In today’s data-driven landscape, the analysis of XML files holds significant importance across diverse industries such as finance, healthcare, and government. The utilization of XML data facilitates organizations in gaining valuable insights, enhancing decision-making processes, and streamlining data integration efforts. However, the semi-structured and highly nested nature o...
+    </summary>
+  
+
+  </entry>
+
+  
+  <entry>
+    <title>SPARK Interview Questions Beginner PART-1</title>
+    <link href="http://localhost:4000/posts/SparkInterviewquestions-Beginner-Part1/" rel="alternate" type="text/html" title="SPARK Interview Questions Beginner PART-1" />
+    <published>2023-11-30T12:00:00+11:00</published>
+  
+    <updated>2023-11-30T12:00:00+11:00</updated>
+  
+    <id>http://localhost:4000/posts/SparkInterviewquestions-Beginner-Part1/</id>
+    <content src="http://localhost:4000/posts/SparkInterviewquestions-Beginner-Part1/" />
+    <author>
+      <name>jay</name>
+    </author>
+
+  
+    
+    <category term="Interview Questions" />
+    
+  
+
+  
+    <summary>
+      
+
+
+
+
+
+      1- What is Lazy Evaluation in Apache Spark?
+
+Before diving into the intricacies of lazy evaluation, it’s crucial to grasp two fundamental concepts in Spark: Transformation and Action.
+
+Transformation:
+In the realm of Spark, the core data structures are immutable, meaning they cannot be altered once created. Transformations are the instructions for modifying these core data structures to shape t...
+    </summary>
+  
+
+  </entry>
+
+  
+  <entry>
+    <title>Part 2 - Orchestrating Snowflake Data Transformations with DBT on Amazon ECS through Apache Airflow</title>
+    <link href="http://localhost:4000/posts/snowflake_dbt_ecs_part2/" rel="alternate" type="text/html" title="Part 2 - Orchestrating Snowflake Data Transformations with DBT on Amazon ECS through Apache Airflow" />
+    <published>2023-10-24T12:00:00+11:00</published>
+  
+    <updated>2023-10-26T10:41:05+11:00</updated>
+  
+    <id>http://localhost:4000/posts/snowflake_dbt_ecs_part2/</id>
+    <content src="http://localhost:4000/posts/snowflake_dbt_ecs_part2/" />
+    <author>
+      <name>jay</name>
+    </author>
+
+  
+    
+    <category term="PROJECT" />
+    
+  
+
+  
+    <summary>
+      
+
+
+
+
+
+      
+
+
+
+
+Overview:
+In our previous post, we explored the setup of DBT on an ECR private repository through an AWS pipeline. In this blog, our emphasis will be on configuring MWAA and initiating DBT processes using Amazon’s managed Apache Airflow (MWAA). Please find the source code on my GitRepo.
+
+Architecture:
+
+
+Architecture
+
+Refer to my previous blog for instructions on configuring DBT on an ECR P...
+    </summary>
+  
+
+  </entry>
+
+  
+  <entry>
+    <title>Part 1 - Orchestrating Snowflake Data Transformations with DBT on Amazon ECS through Apache Airflow.</title>
+    <link href="http://localhost:4000/posts/snowflake_dbt_ecs_part1/" rel="alternate" type="text/html" title="Part 1 - Orchestrating Snowflake Data Transformations with DBT on Amazon ECS through Apache Airflow." />
+    <published>2023-10-24T12:00:00+11:00</published>
+  
+    <updated>2023-10-26T10:41:05+11:00</updated>
+  
+    <id>http://localhost:4000/posts/snowflake_dbt_ecs_part1/</id>
+    <content src="http://localhost:4000/posts/snowflake_dbt_ecs_part1/" />
+    <author>
+      <name>jay</name>
+    </author>
+
+  
+    
+    <category term="PROJECT" />
+    
+  
+
+  
+    <summary>
+      
+
+
+
+
+
+      
+
+
+
+
+Overview:
+This blog offers a comprehensive walkthrough for setting up DBT to execute data transformation tasks specifically designed for Snowflake. We’ve streamlined the DBT configuration process by packaging it within a Docker Image, which is securely stored in a private ECR repository. To efficiently handle scheduling and orchestration, we’ve harnessed the power of both ECS Service and M...
+    </summary>
+  
+
+  </entry>
+
+  
+  <entry>
+    <title>Building Serverless PySpark Jobs with EMR-Serverless and MWAA</title>
+    <link href="http://localhost:4000/posts/EMRserverless/" rel="alternate" type="text/html" title="Building Serverless PySpark Jobs with EMR-Serverless and MWAA" />
+    <published>2023-10-15T12:00:00+11:00</published>
+  
+    <updated>2023-10-26T10:41:05+11:00</updated>
+  
+    <id>http://localhost:4000/posts/EMRserverless/</id>
+    <content src="http://localhost:4000/posts/EMRserverless/" />
+    <author>
+      <name>jay</name>
+    </author>
+
+  
+    
+    <category term="EMR" />
+    
+  
+
+  
+    <summary>
+      
+
+
+
+
+
+      
+
+
+
+
+Introduction
+
+Amazon Web Services (AWS) provides a rich ecosystem of tools and services to tackle big data challenges. Two powerful components that stand out are Amazon EMR (Elastic MapReduce) and Amazon MWAA (Managed Workflows for Apache Airflow).
+
+In this blog, we will explore how the combination of EMR Serverless PySpark jobs on MWAA revolutionises big data processing and analysis.
+
+EMR...
+    </summary>
+  
+
+  </entry>
+
+</feed>
+
+
