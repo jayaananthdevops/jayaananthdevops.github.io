@@ -5,7 +5,7 @@ date: 2024-03-11 12:00:00 +/-0800
 categories: [AWS Athena]
 tags: [glue,athena,xml,glue catalog,glue crawler]     # TAG names should always be lowercase
 image:
-  path: https://assets/glue_xml_athena/XML_AWS_ATHENA.png
+  path: /assets/glue_xml_athena/XML_AWS_ATHENA.png
   alt: XML File Processing with Athena 
 comments: true
 ---
@@ -31,28 +31,28 @@ Before you begin this tutorial, complete the following prerequisites:
 1. Download the sample files from kaggle site 
 2. Establish an S3 Bucket and upload the sample files to it.
 3. Set up all the essential IAM roles and policies.
-4. Generate an AWS Database utilizing Glue.
+4. Generate an AWS Database utilizing  Glue.
 
 **Steps to processs the XML file** 
 
 (i) Before creating a crawler we need to create an xml classifier where we define the rowtag 
 
-  ![img-description](https://assets/glue_xml_athena/classifier_xml.png)
+  ![img-description](/assets/glue_xml_athena/classifier_xml.png)
 _AWS Classifier_
 
 (ii) Generate an AWS Glue crawler to extract metadata from XML files, then execute the crawler to generate a table in the AWS Glue Data Catalog.
 
-  ![img-description](https://assets/glue_xml_athena/crawler_s3_classifier.png)
+  ![img-description](/assets/glue_xml_athena/crawler_s3_classifier.png)
 _AWS Glue Catalog_
 
-  ![img-description](https://assets/glue_xml_athena/crawler_s3_classifier.png)
+  ![img-description](/assets/glue_xml_athena/crawler_s3_classifier.png)
 _AWS Glue Database_
 
 (iii) Go to Athena to view the table and query it
 
 If we try to query the XML table the query will be failed since Athena wont support XML format
 
-  ![img-description](https://assets/glue_xml_athena/xml_query.png)
+  ![img-description](/assets/glue_xml_athena/xml_query.png)
 _Query XML Table Athena_
 
 (iv) Generate a Glue job to convert XML files to the Parquet format, which can be accomplished using two different methods.
@@ -64,13 +64,13 @@ _Query XML Table Athena_
   **Step 1 :** Go to AWS Glue and select ETL Jobs -> Visual ETL
 
   **Step 2 :** Choose AWS Glue Data Catalog as Source and select your respective table as below
-                  ![img-description](https://assets/glue_xml_athena/glue_source.png)
+                  ![img-description](/assets/glue_xml_athena/glue_source.png)
                   _Glue Visual Editor Source_
 
   **Step 3 :** Under transformation choose Change Schema.
 
   **Step 4 :** Under target select S3 bucket ,parquet format and snappy compression as below 
-        ![img-description](https://assets/glue_xml_athena/glue_target.png)
+        ![img-description](/assets/glue_xml_athena/glue_target.png)
         _Glue Visual Editor Target_
 
   **Step 5 :** Choose the respective IAM Role and Run the Glue Job
@@ -121,16 +121,16 @@ job.commit()
 
 (v) Create an AWS Glue crawler to extract Parquet metadata and run the crawler which will create a table in the AWS Glue Data Catalog (Choose the same classifier that we created in the first steps)
 
-![img-description](https://assets/glue_xml_athena/parquet_crawler_src.png)
+![img-description](/assets/glue_xml_athena/parquet_crawler_src.png)
 _AWS Crawler Parquet Source_
 
-![img-description](https://assets/glue_xml_athena/parquet_crawler_output.png)
+![img-description](/assets/glue_xml_athena/parquet_crawler_output.png)
 _AWS Crawler Parquet Output_
 
 
 (vi) Query the table in Athena and the result will be in the JSON format
 
-![img-description](https://assets/glue_xml_athena/parquet_athena.png)
+![img-description](/assets/glue_xml_athena/parquet_athena.png)
 _Query Parquet Table Using Athena_
 
 (vii) To display the JSON data in a tabular format, we must unnest the column. It is essential to grasp the table's schema before proceeding with the unnesting process.
@@ -160,11 +160,11 @@ spark.stop()
 
 Schema Structure of the Table
 
-![img-description](https://assets/glue_xml_athena/printSchema.png)
+![img-description](/assets/glue_xml_athena/printSchema.png)
 _Schema Structure Of Parquet Table_
 
 
-![img-description](https://assets/glue_xml_athena/parquet_unest.png)
+![img-description](/assets/glue_xml_athena/parquet_unest.png)
 _Unnesting the Table using SQL_
 
 
@@ -186,7 +186,7 @@ CROSS JOIN
 {% endhighlight %}
 
 
-![img-description](https://assets/glue_xml_athena/parquest_nestesd_unnest.png)
+![img-description](/assets/glue_xml_athena/parquest_nestesd_unnest.png)
 _Unnesting the nested Table using SQL_
 
 ## Conclusion
