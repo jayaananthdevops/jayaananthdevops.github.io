@@ -195,6 +195,5 @@ In this article, we have explored the process of reading an XML file using Athen
 
 
 
-
 **If you enjoy the article, Please Subscribe.**
 ## If you love the article, Please consider supporting me by buying a coffee for $1.
