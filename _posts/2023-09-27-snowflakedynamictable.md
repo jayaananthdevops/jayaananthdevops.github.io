@@ -8,7 +8,7 @@ image:
   path: SF_dynamics_tables.png
   alt: Snowflake Dynamic Table
 toc: true
-img_path: /assets/dynamictable/
+img_path: assets/dynamictable/
 comments: true
 ---
 

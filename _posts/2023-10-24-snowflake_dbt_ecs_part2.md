@@ -5,7 +5,7 @@ date: 2023-10-24 12:00:00 +/-0800
 categories: [PROJECT]
 tags: [snowflake,dbt,ecs ,mwaa, project]     # TAG names should always be lowercase
 image:
-  path: /assets/snowflake-dbt-ecs/arch_awsdbt.jpeg
+  path: assets/snowflake-dbt-ecs/arch_awsdbt.jpeg
   alt: Snowflake Data Transformations with DBT on Amazon ECS through Apache Airflow-part2
 comments: true
 ---
@@ -25,7 +25,7 @@ In our previous post, we explored the setup of DBT on an ECR private repository 
 
 ## Architecture:
 
-![img-description](/assets/snowflake-dbt-ecs/arch_awsdbt.jpeg)
+![img-description](assets/snowflake-dbt-ecs/arch_awsdbt.jpeg)
 _Architecture_
 
 Refer to my previous blog for instructions on configuring DBT on an ECR Private Repository.
@@ -34,7 +34,7 @@ Refer to my previous blog for instructions on configuring DBT on an ECR Private 
 ## MWAA:
 [Amazon Managed Workflows](https://docs.aws.amazon.com/mwaa/latest/userguide/what-is-mwaa.html) allow developers the ability to quickly deploy an Airflow instance on AWS that utilises a combination of other AWS services to optimise the overall set-up.
 
-![img-description](/assets/snowflake-dbt-ecs/MWAA.png)
+![img-description](assets/snowflake-dbt-ecs/MWAA.png)
 _MWAA_
 
 ## STEP 1: To execute DBT within Airflow, the initial step is to establish MWAA.
@@ -42,12 +42,12 @@ Here are the steps for configuring MWAA:
 
   - 1.Select the S3 bucket from which your MWAA will retrieve the Directed Acyclic Graph (DAG) files.
 
-![img-description](/assets/snowflake-dbt-ecs/MWAA_S3.png)
+![img-description](assets/snowflake-dbt-ecs/MWAA_S3.png)
 _MWAA S3 Bucket Config_
 
  - 2.Choose the Environment Class according to the number of DAGs run in your environment.
 
-![img-description](/assets/snowflake-dbt-ecs/MWAA_ENV.png)
+![img-description](assets/snowflake-dbt-ecs/MWAA_ENV.png)
 _MWAA ENV Config_
 
 - 3.IAM Role permission for Airflow:
@@ -99,10 +99,10 @@ MWAA set up has been completed.
 Set up ECS Cluster and Task definition:
 
 
-![img-description](/assets/snowflake-dbt-ecs/AWS_ECS.png)
+![img-description](assets/snowflake-dbt-ecs/AWS_ECS.png)
 _AWS ECS_
 
-![img-description](/assets/snowflake-dbt-ecs/AWS_ECS_Running.png)
+![img-description](assets/snowflake-dbt-ecs/AWS_ECS_Running.png)
 _AWS ECS running_
 
 ## STEP 3: Place your DAG Code in the S3 Bucket.
@@ -201,18 +201,18 @@ In the container override section, we will provide the ECR image name and specif
 
 The DAG will retrieve the Task definition and cluster information from the Systems Manager (SSM) Parameter Store.
 
-![img-description](/assets/snowflake-dbt-ecs/AWS_SSM.png)
+![img-description](assets/snowflake-dbt-ecs/AWS_SSM.png)
 _AWS SSM_
 ## STEP 4: Trigger your DAG.
 
 
-![img-description](/assets/snowflake-dbt-ecs/MWAA_job.png)
+![img-description](assets/snowflake-dbt-ecs/MWAA_job.png)
 _MWAA DAG Job_
 
 In the image below, you can see your DAG executing the ECS Task function.
 
 
-![img-description](/assets/snowflake-dbt-ecs/ECS_DAG.png)
+![img-description](assets/snowflake-dbt-ecs/ECS_DAG.png)
 _AWS ECS Task Function_
 
 **Example:**
@@ -220,21 +220,21 @@ In the below example, we will capture the result pre and post after airflow jobs
 
 **Source:**
 
-![img-description](/assets/snowflake-dbt-ecs/SRC_EMP.png)
+![img-description](assets/snowflake-dbt-ecs/SRC_EMP.png)
 _Source Table Employee_
 
-![img-description](/assets/snowflake-dbt-ecs/SRC_DEPT.png)
+![img-description](assets/snowflake-dbt-ecs/SRC_DEPT.png)
 _Source Table Department_
 
-![img-description](/assets/snowflake-dbt-ecs/SRC_EMP_DEPT.png)
+![img-description](assets/snowflake-dbt-ecs/SRC_EMP_DEPT.png)
 _Source Table Employee_Department_
 
 **Target:**
 
-![img-description](/assets/snowflake-dbt-ecs/TGT_Table.png)
+![img-description](assets/snowflake-dbt-ecs/TGT_Table.png)
 _Target Emp_fact Table_
 
-![img-description](/assets/snowflake-dbt-ecs/TGT_Table_2.png)
+![img-description](assets/snowflake-dbt-ecs/TGT_Table_2.png)
 _Target Emp_fact Table_
 
 Update the source record to capture the result.
@@ -246,13 +246,13 @@ UPDATE employee SET LAST_NAME='JAYARAM',
 
 **Target post run:**
 
-![img-description](/assets/snowflake-dbt-ecs/POST_TGT.png)
+![img-description](assets/snowflake-dbt-ecs/POST_TGT.png)
 _Post Target Emp_fact Table_
 
-![img-description](/assets/snowflake-dbt-ecs/POST_SCD_1.png)
+![img-description](assets/snowflake-dbt-ecs/POST_SCD_1.png)
 _Post Target SCD_fact Table_
 
-![img-description](/assets/snowflake-dbt-ecs/POST_SCD_2.png)
+![img-description](assets/snowflake-dbt-ecs/POST_SCD_2.png)
 _Post Target SCD_fact Table_
 
 ## Advantages of Scheduled DBT Model Deployment for Snowflake Utilising AWS ECS and Airflow:

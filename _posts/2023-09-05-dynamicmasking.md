@@ -8,7 +8,7 @@ image:
   path: DYNAMICDATAMASKIN.png
   alt: Snowflake Dynamic Data Masking
 toc: true
-img_path: /assets/dynamimasking/
+img_path: assets/dynamimasking/
 comments: true
 ---
 

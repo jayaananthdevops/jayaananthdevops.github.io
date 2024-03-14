@@ -5,7 +5,7 @@ date: 2023-10-24 12:00:00 +/-0800
 categories: [PROJECT]
 tags: [snowflake,dbt,ecs ,mwaa, project]     # TAG names should always be lowercase
 image:
-  path: /assets/snowflake-dbt-ecs/arch_awsdbt.jpeg
+  path: assets/snowflake-dbt-ecs/arch_awsdbt.jpeg
   alt: Snowflake Data Transformations with DBT on Amazon ECS through Apache Airflow-
 comments: true
 ---
@@ -24,7 +24,7 @@ This blog offers a comprehensive walkthrough for setting up DBT to execute data 
 
 ## Architecture:
 
-![img-description](/assets/snowflake-dbt-ecs/arch_awsdbt.jpeg)
+![img-description](assets/snowflake-dbt-ecs/arch_awsdbt.jpeg)
 _Architecture_
 
 ## Data Build Tool:
@@ -96,7 +96,7 @@ Please find the tree of the source code, as seen below.
 
 
 
-![img-description](/assets/snowflake-dbt-ecs/codecommit-src.png)
+![img-description](assets/snowflake-dbt-ecs/codecommit-src.png)
 _Code Commit Src_
 
 
@@ -182,13 +182,13 @@ phases:
 
 ## Code Build Environment Variable:
 
-![img-description](/assets/snowflake-dbt-ecs/codebuild-param.png)
+![img-description](assets/snowflake-dbt-ecs/codebuild-param.png)
 _Code Build Param_
 
 
 Up to this point, we've successfully compiled the code and uploaded our Docker image to the ECR Repository.
 
-![img-description](/assets/snowflake-dbt-ecs/ECR.png)
+![img-description](assets/snowflake-dbt-ecs/ECR.png)
 _ECR_
 
 As an illustrative example, we will be writing a code in DBT to implement Slowly Changing Dimensions (SCD) type 2 using models and snapshots in the Snowflake environment.

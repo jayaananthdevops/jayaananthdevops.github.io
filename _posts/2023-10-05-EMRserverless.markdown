@@ -5,7 +5,7 @@ date: 2023-10-15 12:00:00 +/-0800
 categories: [EMR]
 tags: [emr,spark,airflow,mwaa]     # TAG names should always be lowercase
 image:
-  path: /assets/spark/emrserverless-spark.png
+  path: assets/spark/emrserverless-spark.png
   alt: emrserverless_pyspark
 comments: true
 ---
@@ -224,7 +224,7 @@ from airflow.providers.amazon.aws.operators.emr import (
 ## Step 3: Open the MWAA user interface (UI) and find the below DAG.
 
  
- ![img-description](/assets/spark/mwaa.png)
+ ![img-description](assets/spark/mwaa.png)
 _MWAA Airflow_
 
 
@@ -235,20 +235,20 @@ The create_spark_app will create the EMR Application.
 Start job will run the spark job on the EMR applications.
 
 
-![img-description](/assets/spark/EMR-1.png)
+![img-description](assets/spark/EMR-1.png)
 _EMR Pyspark_
 
 
 Delete_app will delete the EMR application which was created as a part of the first step once the spark job has completed.
 
-![img-description](/assets/spark/EMR-2.png)
+![img-description](assets/spark/EMR-2.png)
 _EMR Pyspark_
 
 
 
 ## Result
 
-![img-description](/assets/spark/EMRTABLE.png)
+![img-description](assets/spark/EMRTABLE.png)
 _EMR Result_
 
 
