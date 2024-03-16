@@ -10,7 +10,7 @@ image:
 comments: true
 ---
 
-## 1- What is Lazy Evaluation in Apache Spark???
+## 1- What is Lazy Evaluation in Apache Spark?>
 
 Before diving into the intricacies of lazy evaluation, it's crucial to grasp two fundamental concepts in Spark: Transformation and Action.
 
