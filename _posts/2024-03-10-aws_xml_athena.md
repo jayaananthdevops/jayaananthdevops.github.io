@@ -3,7 +3,7 @@ title: Efficient XML Data Processing and Querying with AWS Glue and Athena - A C
 author: jay
 date: 2024-03-11 12:00:00 +/-0800
 categories: [AWS Athena]
-tags: [glue,athena,xml,glue catalog,glue crawler]     # TAG names should always be lowercase
+tags: [glue,athena,xml,glue catalog,glue crawler,spark]     # TAG names should always be lowercase
 image:
   path: /assets/glue_xml_athena/XML_AWS_ATHENA.png
   alt: XML File Processing with Athena 
