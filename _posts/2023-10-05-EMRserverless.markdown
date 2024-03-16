@@ -5,7 +5,7 @@ date: 2023-10-15 12:00:00 +/-0800
 categories: [EMR]
 tags: [emr,spark,airflow,mwaa]     # TAG names should always be lowercase
 image:
-  path: /assets/spark/emrserverless-spark.png
+  path: "/assets/spark/emrserverless-spark.png"
   alt: emrserverless_pyspark
 comments: true
 ---
