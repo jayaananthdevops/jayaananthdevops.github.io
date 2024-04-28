@@ -2,7 +2,7 @@
 title: Streamline Onix 3.0 Multi-Nested XML Processing - AWS Glue with DynamicFrames, Relationalize, and Databricks Spark-XML
 author: jay
 date: 2024-04-28 12:00:00 +/-0800
-categories: [PROJECT]
+categories: [AWS Glue]
 tags: [XML,aws glue,S3 ,spark, project]     # TAG names should always be lowercase
 image:
   path: /assets/xml_glue_databrickslib/AWS Glue- Using_DynamicFrame,Relationalize,Databricks Spark-XML.png
