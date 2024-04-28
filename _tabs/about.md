@@ -8,7 +8,7 @@ image: /assets/jaypic.jpeg
 <!-- Add Markdown syntax content to file `_tabs/about.md`{: .filepath } and it will show up on this page.
 {: .prompt-tip } -->
 
-With over 12 years of dedicated experience in the field of data engineering, I currently hold the role of an AWS Data Consultant at Cevo, based in Australia. Throughout my journey, I've gained hands-on expertise in numerous facets of data engineering, including data modeling, integration, extraction, loading, ongoing maintenance, and the creation of decision support and reporting systems. My proficiency extends to a deep understanding of data warehousing principles and the development of ETL/ELT processes, notably leveraging tools such as Redshift and Snowflake.
+With over 12 years of dedicated experience in the field of data engineering, I currently hold the role of an Senior AWS Data Consultant, in Australia. Throughout my journey, I've gained hands-on expertise in numerous facets of data engineering, including data modeling, integration, extraction, loading, ongoing maintenance, and the creation of decision support and reporting systems. My proficiency extends to a deep understanding of data warehousing principles and the development of ETL/ELT processes, notably leveraging tools such as Redshift and Snowflake.
 
 I possess a strong passion for both Data Lakes and Modern Data Architecture
 
