@@ -171,7 +171,7 @@ This method works well even when the schema structure isn't stated explicitly. H
 
 2) **Upload the JAR File to an S3 Bucket:** Upload the downloaded JAR file to an S3 bucket that your AWS Glue job can access.
 
-![img-description](/assets/snowflake-dbt-ecs/ECR.png)
+![img-description](/assets/xml_glue_databrickslib/S3_Databricks_jarfile.png)
 _DataBrciks Jar File_
 
 3) **Configure Your AWS Glue Notebook:** In the first cell of your AWS Glue notebook, add the following code to ensure that the Databricks Spark-XML library is available to your job
@@ -198,10 +198,9 @@ _Dynamic Frame Schema Structure_
 **Schema for Databricks-Spark Xml**
 
 ![img-description](/assets/xml_glue_databrickslib/Databricks_struct_xml.png)
-_Dynamic Frame Schema Structure_
+_Databrick Schema Structure_
 
-
-The below snippet is to read the the xml file using databrick spark-xml
+The below snippet is to read the XML file using DataBrick spark-XML
 
 ```python
 
@@ -245,7 +244,7 @@ product_df.printSchema()
 
 ```
 
-The relationalize function will flatten the nested structure, storing it as keys in a tabular format. Utilize the following snippet to achieve the flattening.The relationalize need the S3 path to store the flatten structure
+The relationalize function will flatten the nested structure, storing it as keys in a tabular format. Utilize the following snippet to achieve the flattening.The relationalize needs the S3 path to store the flattened structure
 
 ``` python
 dyf = DynamicFrame.fromDF(product_df, glueContext, "dyf")
