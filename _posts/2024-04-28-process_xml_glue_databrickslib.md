@@ -551,5 +551,7 @@ This blog extensively explores the efficient methods for reading multi-nested sc
 
 
 <!-- Google AdSense Code Snippet -->
-<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4606733459883553"
+<head>
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4606733459883553"
      crossorigin="anonymous"></script>
+</head>
